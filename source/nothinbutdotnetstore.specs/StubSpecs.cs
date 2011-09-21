@@ -5,6 +5,7 @@ using developwithpassion.specifications.rhinomocks;
 using nothinbutdotnetstore.web.application.catalogbrowsing.stubs;
 using nothinbutdotnetstore.web.core;
 using developwithpassion.specifications.extensions;
+using nothinbutdotnetstore.web.core.stubs;
 
 namespace nothinbutdotnetstore.specs
 {

@@ -1,4 +1,4 @@
-﻿namespace nothinbutdotnetstore.web.application.catalogbrowsing.stubs
+﻿namespace nothinbutdotnetstore.web.core.stubs
 {
 	public class Stub
 	{
