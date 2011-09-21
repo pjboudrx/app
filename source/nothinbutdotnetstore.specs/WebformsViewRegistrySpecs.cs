@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using Machine.Specifications;
 using developwithpassion.specifications.extensions;
 using developwithpassion.specifications.rhinomocks;
@@ -16,8 +17,11 @@ namespace nothinbutdotnetstore.specs
 			Establish c = () =>
 			{
 				var all_views = Enumerable.Range(1, 100).Select(x => fake.an<IDisplayAReport>()).ToList();
+				
 				the_view = fake.an<IDisplayAReport>();
 				the_view.setup(x => x.can_display(report_model)).Return(true);
+
+				depends.on<IEnumerable<IDisplayAReport>>(all_views);
 			};
 
 			private Because b = () => result = sut.get_view_for(report_model);

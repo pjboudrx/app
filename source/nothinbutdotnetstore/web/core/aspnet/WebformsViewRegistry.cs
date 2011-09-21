@@ -1,4 +1,6 @@
-﻿namespace nothinbutdotnetstore.web.core.aspnet
+﻿using System.Collections.Generic;
+
+namespace nothinbutdotnetstore.web.core.aspnet
 {
 	public class WebformsViewRegistry : IFindViewForModel
 	{
