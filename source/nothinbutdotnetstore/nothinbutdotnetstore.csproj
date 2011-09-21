@@ -89,6 +89,7 @@
     <Compile Include="web\application\catalogbrowsing\ViewTheMainDepartments.cs" />
     <Compile Include="web\application\catalogbrowsing\ViewTheProductsInADepartment.cs" />
     <Compile Include="web\application\catalogbrowsing\ViewTheProductsInADepartmentInputModel.cs" />
+    <Compile Include="web\core\aspnet\WebformsViewRegistry.cs" />
     <Compile Include="web\core\CommandRegistry.cs" />
     <Compile Include="web\core\DisplayEngine.cs" />
     <Compile Include="web\core\FrontController.cs" />
