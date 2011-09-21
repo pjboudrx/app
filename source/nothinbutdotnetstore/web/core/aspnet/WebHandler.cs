@@ -1,4 +1,5 @@
 ﻿using System.Web;
+using nothinbutdotnetstore.web.application.catalogbrowsing.stubs;
 using nothinbutdotnetstore.web.core.stubs;
 
 namespace nothinbutdotnetstore.web.core.aspnet
@@ -8,7 +9,7 @@ namespace nothinbutdotnetstore.web.core.aspnet
         IProcessRequests front_controller;
         ICreateRequests request_factory;
 
-        public WebHandler():this(new FrontController(),new StubRequestFactory())
+        public WebHandler():this(new FrontController(), Stub.with<StubRequestFactory>())
         {
         }
 
